@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: -16px;
+    padding-right: -16px; 
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+   width: 16.66%;
+}    
+.col-3 {
+   width: 25%;
+}
+.col-4 {
+   width: 33.33%;
+}   
+.col-5 {
+   width: 41.66%;
+}
+.col-6 {
+   width: 50%;
+}    
+.col-7 {
+   width: 58.33%;
+}
+.col-8 {
+   width: 66.66%;
+}    
+.col-9 {
+   width: 75%;
+}
+.col-10 {
+   width: 83.33%;
+}   
+.col-11 {
+   width: 91.66%;
+}
+.col-12 {
+   width: 100%;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+/* Header */
+header{
+    background-color: #5798b0;
+    width: 100%;
+    padding: 10px 50px;
+}
+.logo img{
+    width: 100%;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+} 
+nav ul li a{
+    display: block;
+    padding: 25px 40px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.menu{
+    display: none;
+    justify-content: flex-end;
+}
+.menu a{
+    border: 1px solid white;
+    padding: 10px; 
+    border-radius: 6px;
+}
+.menu a i{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* Slider */
+.slider{
+    padding-top: 80px;
+}
+.swiper-slide img{
+    height: 80vh;
+    width: 100%;
+}
+
+/* Accordian */
+.accordian{
+    padding: 100px;
+    background-color: #5798b0;
+}
+.accordian .container .row .col-12 > h1{
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.accordian-1{
+    background-color: #5798b0;
+}
+.accordian-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 40px;
+    color: white;
+}
+.accordian-body{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 40px;
+    border-bottom: 2px solid white;
+    display: none;
+}
+.accordian-2 .accordian-head{
+    border-top: none;
+    border-bottom: none;
+}
+.accordian-body.show{
+    display: block;
+}
